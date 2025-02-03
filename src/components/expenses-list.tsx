@@ -1,26 +1,15 @@
-export default function ExpensesList() {
-  const expenses = [
-    {
-      id: 1,
-      title: "Groceries",
-      amount: 94.12,
-    },
-    {
-      id: 2,
-      title: "New TV",
-      amount: 799.49,
-    },
-    {
-      id: 3,
-      title: "Car Insurance",
-      amount: 294.67,
-    },
-    {
-      id: 4,
-      title: "New Desk (Wooden)",
-      amount: 450,
-    },
-  ];
+type ExpensesListProps = {
+  expenses: {
+    expenses: {
+      id: number;
+      title: string;
+      amount: number;
+      createdAt: Date;
+    };
+  }[];
+};
+
+export default function ExpensesList({ expenses }: ExpensesListProps) {
   return (
     <ul className="h-[300px] bg-white rounded mt-4 shadow-md">
       {expenses.map((expense) => (

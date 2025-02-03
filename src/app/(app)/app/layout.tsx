@@ -1,5 +1,5 @@
-import AppHeader from "@/app/components/app-header";
-import BackgroundPattern from "@/app/components/background-pattern";
+import AppHeader from "@/components/app-header";
+import BackgroundPattern from "@/components/background-pattern";
 import Dashboard from "./dashboard/page";
 
 export default function Layout({
