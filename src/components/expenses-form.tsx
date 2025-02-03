@@ -1,9 +1,11 @@
+import { addExpense } from "@/actions/actions";
+
 export default function ExpensesForm() {
   return (
-    <form className="w-full mt-8 rounded overflow-hidden">
+    <form action={addExpense} className="w-full mt-8 rounded overflow-hidden">
       <input
         type="text"
-        name="description"
+        name="title"
         placeholder="Description"
         className="w-full px-3 py-2 outline-none"
       />
